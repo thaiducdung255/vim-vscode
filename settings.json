@@ -1,0 +1,455 @@
+{
+  "keyboard.dispatch": "keyCode",
+  "window.zoomLevel": 1,
+  "typescript.suggest.autoImports": false,
+  "javascript.suggest.autoImports": false,
+  "telemetry.telemetryLevel": "off",
+  "editor.smoothScrolling": true,
+  "search.smartCase": true,
+  "search.showLineNumbers": true,
+  "update.showReleaseNotes": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.inlayHints.enabled": "on",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.tsserver.maxTsServerMemory": 8096,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "window.commandCenter": false,
+  "json.format.keepLines": true,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.insertSpaces": false,
+  "gitlens.advanced.externalDiffTool": "delta",
+  "indentRainbow.colorOnWhiteSpaceOnly": true,
+  "workbench.tips.enabled": false,
+  "editor.codeActionsOnSave": { },
+  "breadcrumbs.enabled": false,
+  "workbench.iconTheme": "vscode-great-icons",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.lineNumbers": "relative",
+  "git.autofetch": true,
+  "biome.enabled": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "rest-client.showResponseInDifferentTab": true,
+  "workbench.startupEditor": "none",
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.telemetry.enabled": false,
+  "window.customTitleBarVisibility": "auto",
+  "workbench.layoutControl.enabled": false,
+  "rest-client.requestNameAsResponseTabTitle": true,
+  "githubPullRequests.pullBranch": "never",
+  "github.copilot.enable": {
+    "*": "true",
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "cody.telemetry.level": "off",
+  "cody.autocomplete.formatOnAccept": true,
+  "customizeUI.font.monospace": "FiraCode Nerd Font Mono",
+  "customizeUI.font.regular": "FiraCode Nerd Font Mono",
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "editor.background": "#0c0c0c"
+    }
+  },
+  "indentRainbow.indicatorStyle": "light",
+  "window.menuBarVisibility": "toggle",
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "git.confirmSync": false,
+  "editor.stickyScroll.enabled": false,
+  "terminal.explorerKind": "external",
+  "terminal.external.linuxExec": "warp-terminal",
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-w>": false,
+    "<C-z>": false
+  },
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "blue",
+  "vim.enableNeovim": false,
+  "vim.vimrc.enable": false,
+  "vim.surround": true,
+  "vim.cursorStylePerMode.insert": "line-thin",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "underline-thin",
+  "vim.cursorStylePerMode.visual": "underline-thin",
+  "vim.insertModeKeyBindingsNonRecursive": [
+    // brackets
+    {
+      "before": [ ";", "n" ],
+      "after": [ "(" ]
+    },
+    {
+      "before": [ ";", "e" ],
+      "after": [ "[" ]
+    },
+    {
+      "before": [ ";", "i" ],
+      "after": [ "{" ]
+    },
+    {
+      "before": [ ";", "n" ],
+      "after": [ "(" ]
+    },
+    {
+      "before": [ ";", "h" ],
+      "after": [ "<", ">", "<left>" ]
+    },
+    // new line
+    {
+      "before": [ ",", "," ],
+      "after": [ ",", "<cr>" ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // colemak config
+    {
+      "before": [ "e" ],
+      "after": [ "k" ]
+    },
+    {
+      "before": [ "n" ],
+      "after": [ "j" ]
+    },
+    {
+      "before": [ "i" ],
+      "after": [ "l" ]
+    },
+    // comment
+    {
+      "before": [ ";" ],
+      "after": [ "g", "c", "c" ]
+    },
+    // scroll
+    {
+      "before": [ "m" ],
+      "after": [ "<C-d>" ]
+    },
+    {
+      "before": [ "M" ],
+      "after": [ "<C-u>" ]
+    },
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // colemak config
+    {
+      "before": [ "e" ],
+      "after": [ "k" ]
+    },
+    {
+      "before": [ "n" ],
+      "after": [ "j" ]
+    },
+    {
+      "before": [ "i" ],
+      "after": [ "l" ]
+    },
+    {
+      "before": [ "k" ],
+      "after": [ "i" ]
+    },
+    {
+      "before": [ "K" ],
+      "after": [ "I" ]
+    },
+    // bracket motion
+    {
+      "before": [ "d", "s" ],
+      "after": [ "d", "i", "'" ]
+    },
+    {
+      "before": [ "d", "q" ],
+      "after": [ "d", "i", "\"" ]
+    },
+    {
+      "before": [ "d", "n" ],
+      "after": [ "d", "i", "(" ]
+    },
+    {
+      "before": [ "d", "e" ],
+      "after": [ "d", "i", "[" ]
+    },
+    {
+      "before": [ "d", "i" ],
+      "after": [ "d", "i", "{" ]
+    },
+    // cursor navigation
+    {
+      "before": [ "H" ],
+      "after": [ "<C-o>" ]
+    },
+    {
+      "before": [ "I" ],
+      "after": [ "<C-i>" ]
+    },
+    // misc
+    {
+      "before": [ "<cr>" ],
+      "commands": [ "workbench.action.showCommands" ]
+    },
+    {
+      "before": [ "<Leader>", "q" ],
+      "commands": [ "workbench.action.closeActiveEditor" ]
+    },
+    // terminal
+    {
+      "before": [ "g", "t" ],
+      "commands": [ "workbench.action.terminal.toggleTerminal" ]
+    },
+    // split windows
+    {
+      "before": [ "s", "n" ],
+      "commands": [ ":split" ]
+    },
+    {
+      "before": [ "s", "e" ],
+      "commands": [ ":vsplit" ]
+    },
+    // window navigation
+    {
+      "before": [ "<leader>", "h" ],
+      "after": [ "<C-w>", "h" ]
+    },
+    {
+      "before": [ "<leader>", "i" ],
+      "after": [ "<C-w>", "l" ]
+    },
+    {
+      "before": [ "<leader>", "n" ],
+      "after": [ "<C-w>", "j" ]
+    },
+    {
+      "before": [ "<leader>", "e" ],
+      "after": [ "<C-w>", "k" ]
+    },
+    // git
+    {
+      "before": [ "g", "n" ],
+      "commands": [ "workbench.action.editor.nextChange" ],
+    },
+    {
+      "before": [ "g", "e" ],
+      "commands": [ "workbench.action.editor.previousChange" ]
+    },
+    {
+      "before": [ "g", "u" ],
+      "commands": [
+        "git.revertSelectedRanges"
+      ],
+    },
+    {
+      "before": [ "g", "q" ],
+      "commands": [
+        "git.clean"
+      ],
+    },
+    // graphql client
+    // {
+    //   "before": [ "g", "," ],
+    //   "commands": [ "vscode-graphql-execution.contentProvider" ]
+    // },
+    // rest client
+    {
+      "before": [ "g", "." ],
+      "commands": [ "rest-client.request" ]
+    },
+    // tab navigation
+    {
+      "before": [ "N" ],
+      "commands": [ ":tabprev" ]
+    },
+    {
+      "before": [ "E" ],
+      "commands": [ ":tabnext" ]
+    },
+    {
+      "before": [ "<Leader>", "t" ],
+      "commands": [ ":tabnew" ]
+    },
+    // scroll
+    {
+      "before": [ "m" ],
+      "after": [ "<C-d>" ]
+    },
+    {
+      "before": [ "M" ],
+      "after": [ "<C-u>" ]
+    },
+    // fold
+    {
+      "before": [ "z" ],
+      "commands": [ "editor.fold" ]
+    },
+    {
+      "before": [ "<C-n>" ],
+      "commands": [ "editor.gotoNextFold" ]
+    },
+    {
+      "before": [ "<C-e>" ],
+      "commands": [ "editor.gotoPreviousFold" ]
+    },
+    // find
+    {
+      "before": [ "f", "f" ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [ "g", "o" ],
+      "commands": [ "editor.action.jumpToBracket" ]
+    },
+    {
+      "before": [ "v", "o" ],
+      "commands": [ "editor.action.selectToBracket" ]
+    },
+    {
+      "before": [ "d", "o" ],
+      "commands": [ "editor.action.removeBrackets" ]
+    },
+    {
+      "before": [ "f", "s" ],
+      "commands": [ "workbench.view.search" ]
+    },
+    {
+      "before": [ "/" ],
+      "commands": [ "actions.find" ]
+    },
+    // code actions
+    {
+      "before": [ "t", "p" ],
+      "commands": [ "workbench.actions.view.problems" ]
+    },
+    {
+      "before": [ "t", "n" ],
+      "commands": [ "editor.action.marker.next" ]
+    },
+    {
+      "before": [ "t", "e" ],
+      "commands": [ "editor.action.marker.prev" ]
+    },
+    {
+      "before": [ "t", "s" ],
+      "commands": [ "workbench.action.gotoSymbol" ],
+    },
+    {
+      "before": [ "t", "h" ],
+      "commands": [ "editor.action.showHover" ]
+    },
+    {
+      "before": [ "t", "t" ],
+      "commands": [ "editor.action.revealDefinition" ]
+    },
+    {
+      "before": [ "t", "." ],
+      "commands": [ "editor.action.peekDefinition" ]
+    },
+    {
+      "before": [ "t", "r" ],
+      "commands": [ "editor.action.rename" ]
+    },
+    {
+      "before": [ "t", "<cr>" ],
+      "commands": [ "editor.action.quickFix" ]
+    },
+    {
+      "before": [ "t", "f" ],
+      "commands": [ "editor.action.goToReferences" ]
+    },
+    {
+      "before": [ "t", "a" ],
+      "commands": [ "problems.action.openToSide" ]
+    },
+    {
+      "before": [ "s", "<cr>" ],
+      "commands": [
+        ":w"
+      ]
+    },
+    // undo/redo
+    {
+      "before": [ "U" ],
+      "commands": [ "redo" ]
+    },
+    {
+      "before": [ "u" ],
+      "commands": [ "undo" ]
+    },
+    // easymotion
+    {
+      "before": [ "s", "s" ],
+      "after": [ "<leader>", "<leader>", "/" ]
+    },
+    {
+      "before": [ "s", "l" ],
+      "after": [ "<leader>", "<leader>", "<leader>", "b", "d", "j", "k" ]
+    },
+    {
+      "before": [ "s", "w" ],
+      "after": [ "<leader>", "<leader>", "<leader>", "b", "d", "w" ]
+    },
+    {
+      "before": [ "s", "W" ],
+      "after": [ "<leader>", "<leader>", "<leader>", "b", "d", "e" ]
+    },
+    // comment
+    {
+      "before": [ ";" ],
+      "after": [ "g", "c", "c" ]
+    },
+    {
+      "before": [ "s", "i" ],
+      "commands": [ "workbench.action.increaseViewSize" ],
+    },
+    {
+      "before": [ "s", "h" ],
+      "commands": [ "workbench.action.decreaseViewSize" ],
+    },
+    // sidebars
+    {
+      "before": [ "T" ],
+      "commands": [ "workbench.view.explorer" ],
+    },
+    {
+      "before": [ "g", "p" ],
+      "commands": [ "workbench.extensions.action.installExtensions" ]
+    },
+    {
+      "before": [ "g", "a" ],
+      "commands": [ "workbench.view.scm" ]
+    },
+    {
+      "before": [ "g", "s" ],
+      "commands": [ "workbench.actions.view.problems" ]
+    },
+    // visual mode
+    {
+      "before": [ "<space>", "v" ],
+      "after": [ "V" ],
+    }
+  ]
+}
