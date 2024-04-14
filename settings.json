@@ -87,6 +87,7 @@
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useCtrlKeys": true,
+  "vim.smartRelativeLine": true,
   "vim.hlsearch": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "blue",
@@ -94,9 +95,12 @@
   "vim.vimrc.enable": false,
   "vim.surround": true,
   "vim.cursorStylePerMode.insert": "line-thin",
-  "vim.cursorStylePerMode.normal": "block",
-  "vim.cursorStylePerMode.replace": "underline-thin",
-  "vim.cursorStylePerMode.visual": "underline-thin",
+  "vim.cursorStylePerMode.normal": "block-outline",
+  "vim.cursorStylePerMode.replace": "underline",
+  "vim.cursorStylePerMode.visual": "block",
+  "vim.cursorStylePerMode.visualline": "block",
+  "vim.sneak": true,
+  // "vim.sneakReplacesF": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     // brackets
     {
@@ -178,6 +182,10 @@
     },
     // bracket motion
     {
+      "before": ["d", "h"],
+      "after": ["d", "i", "<"]
+    },
+    {
       "before": ["d", "s"],
       "after": ["d", "i", "'"]
     },
@@ -190,12 +198,67 @@
       "after": ["d", "i", "("]
     },
     {
-      "before": ["d", "e"],
-      "after": ["d", "i", "["]
-    },
-    {
       "before": ["d", "i"],
       "after": ["d", "i", "{"]
+    },
+    // {
+    //   "before": ["d", "e"],
+    //   "after": ["d", "i", "["]
+    // },
+
+    {
+      "before": ["c", "h"],
+      "after": ["c", "i", "<"]
+    },
+    {
+      "before": ["c", "s"],
+      "after": ["c", "i", "'"]
+    },
+    {
+      "before": ["c", "q"],
+      "after": ["c", "i", "\""]
+    },
+    {
+      "before": ["c", "n"],
+      "after": ["c", "i", "("]
+    },
+    {
+      "before": ["c", "i"],
+      "after": ["c", "i", "{"]
+    },
+    // {
+    //   "before": ["c", "e"],
+    //   "after": ["c", "i", "["]
+    // },
+
+    {
+      "before": ["y", "h"],
+      "after": ["y", "i", "<"]
+    },
+    {
+      "before": ["y", "s"],
+      "after": ["y", "i", "'"]
+    },
+    {
+      "before": ["y", "q"],
+      "after": ["y", "i", "\""]
+    },
+    {
+      "before": ["y", "n"],
+      "after": ["y", "i", "("]
+    },
+    {
+      "before": ["y", "i"],
+      "after": ["y", "i", "{"]
+    },
+    // {
+    //   "before": ["c", "e"],
+    //   "after": ["c", "i", "["]
+    // },
+    // yank
+    {
+      "before": ["Y"],
+      "after": ["y", "$"]
     },
     // cursor navigation
     {
@@ -318,12 +381,20 @@
       "commands": ["editor.action.jumpToBracket"]
     },
     {
-      "before": ["v", "o"],
+      "before": ["s", "o"],
       "commands": ["editor.action.selectToBracket"]
     },
     {
-      "before": ["d", "o"],
+      "before": ["t", "o"],
       "commands": ["editor.action.removeBrackets"]
+    },
+    {
+      "before": ["d", "o"],
+      "commands": ["editor.action.selectToBracket", "extension.vim_delete"]
+    },
+    {
+      "before": ["c", "o"],
+      "commands": ["editor.action.selectToBracket", "extension.vim_delete"]
     },
     {
       "before": ["f", "s"],

@@ -2653,4 +2653,9 @@
         "command": "workbench.action.closeAuxiliaryBar",
         "when": "auxiliaryBarFocus"
     },
+    {
+        "key": "ctrl+space",
+        "command": "workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorFocus"
+    },
 ]
