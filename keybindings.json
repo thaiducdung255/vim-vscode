@@ -2607,7 +2607,7 @@
         "when": "editorTextFocus && !editorReadonly && suggestWidgetVisible"
     },
     {
-        "key": "ctrl+space",
+        "key": "ctrl+enter",
         "command": "editor.action.inlineSuggest.commit",
         "when": "editorTextFocus && vim.mode = 'insert'"
     },

@@ -97,10 +97,9 @@
   "vim.cursorStylePerMode.insert": "line-thin",
   "vim.cursorStylePerMode.normal": "block-outline",
   "vim.cursorStylePerMode.replace": "underline",
-  "vim.cursorStylePerMode.visual": "block",
-  "vim.cursorStylePerMode.visualline": "block",
+  "vim.cursorStylePerMode.visual": "underline",
+  "vim.cursorStylePerMode.visualline": "underline",
   "vim.sneak": true,
-  // "vim.sneakReplacesF": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     // brackets
     {
@@ -495,7 +494,8 @@
     // sidebars
     {
       "before": ["T"],
-      "commands": ["workbench.view.explorer"]
+      "commands": ["workbench.view.explorer"],
+      "when": ""
     },
     {
       "before": ["g", "p"],
