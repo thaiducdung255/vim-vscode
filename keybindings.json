@@ -2577,17 +2577,51 @@
         "command": "workbench.action.closeSidebar",
         "when": "filesExplorerFocus && !inputFocus"
     },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "y",
+        "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "gf",
+        "command": "revealInExplorer"
+    },
 
     // compare editor
     {
         "key": "tab",
         "command": "workbench.action.compareEditor.nextChange",
-        "when": "textCompareEditorVisible"
+        "when": "textCompareEditorVisible && vim.mode == 'Normal' && editorFocus"
     },
     {
         "key": "shift+tab",
         "command": "workbench.action.compareEditor.previousChange",
-        "when": "textCompareEditorVisible"
+        "when": "textCompareEditorVisible && vim.mode == 'Normal' && editorFocus"
     },
 
     // move line action
@@ -2609,7 +2643,7 @@
     {
         "key": "ctrl+enter",
         "command": "editor.action.inlineSuggest.commit",
-        "when": "editorTextFocus && vim.mode = 'insert'"
+        "when": "editorTextFocus && vim.mode == 'Insert'"
     },
 
     // editor focus

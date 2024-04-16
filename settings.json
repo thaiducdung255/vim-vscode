@@ -494,8 +494,11 @@
     // sidebars
     {
       "before": ["T"],
-      "commands": ["workbench.view.explorer"],
-      "when": ""
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["revealInExplorer"]
     },
     {
       "before": ["g", "p"],
